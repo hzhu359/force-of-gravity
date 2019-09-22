@@ -4,13 +4,15 @@ public class FGsolver {
 		// Object 1 is acted on by Object 2
 		double mass1 = 2*1.6e-19;
 		double mass2 = 1.6e-19;
-
+		
+		// Original Positions
 		double[] pos1 = new double[]{4.4e-9, 0, 3.8e-9};
 		double[] pos2 = new double[]{0, 0, -3e-9};
-
+		
+		// time interval
 		double deltaT = 1e6;
 		final double G = 6.7e-11;
-
+		
 		// r = r1 - r2
 		double[] r = new double[]{pos1[0] - pos2[0], pos1[1] - pos2[1], pos1[2] - pos2[2]};
 
